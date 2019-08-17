@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/headerbar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/bar_top2" >
+
+    <Button
+        android:id="@+id/btnLevel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="2dip"
+        android:text="محاسبه مصرف"
+        android:textColor="#F9F9F6"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/photolevel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_toLeftOf="@id/btnLevel1"
+        android:paddingTop="15dp"
+        android:src="@drawable/arrow_next" />
+
+    <Button
+        android:id="@+id/btnLevel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/photolevel1"
+        android:text="خانگی"
+        android:textColor="#F9F9F6"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/photolevel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_toLeftOf="@id/btnLevel2"
+        android:paddingTop="15dp"
+        android:src="@drawable/arrow_next" />
+
+    <Button
+        android:id="@+id/btnLevel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/photolevel2"
+        android:text="حمام"
+        android:textColor="#F9F9F6"
+        android:textSize="16sp" />
+
+</RelativeLayout>

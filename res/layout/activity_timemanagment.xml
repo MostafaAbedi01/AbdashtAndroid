@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bgmain"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header_bar_timemanagment" />
+
+    <ScrollView
+        android:id="@+id/layMain"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <LinearLayout
+            android:id="@+id/llPlayersName"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layLongitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6" >
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    style="@style/App_SpinnerStyleTimeManage"
+                    android:layout_weight="5"
+                        android:layout_width="100dp"
+                    android:background="@drawable/shape_spinner" />
+
+                <TextView
+                    android:id="@+id/lblLongitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="اگر دوش گرفتن خود را "
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layLatitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6" >
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    style="@style/App_SpinnerStyleTimeManage"
+                    android:layout_width="100dp"
+                    android:layout_weight="5"
+                    android:background="@drawable/shape_spinner" />
+
+                <TextView
+                    android:id="@+id/lblLatitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="کاهش دهید،درمدت زمان"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6" >
+
+                <TextView
+                    android:id="@+id/lblAddress11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_weight="3"
+                    android:gravity="right|center"
+                    android:text=" لیتر صرفه جویی خواهید داشت. "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lbl1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_weight="2"
+                    android:background="@drawable/shape_textview_timemanag"
+                    android:gravity="left"
+                    android:text="600"
+                    android:textColor="#002866"
+                    android:textSize="20sp"
+                    android:textStyle="bold" 
+                    android:paddingLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/lblAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="، برابر "
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4" >
+
+                <View
+                    android:id="@+id/lblTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/holo_orange_dark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layLatitudde"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4" >
+
+                <Spinner
+                    android:id="@+id/spinner3"
+                        android:layout_width="100dp"
+                    style="@style/App_SpinnerStyleTimeManage"
+                    android:layout_weight="3"
+                    android:background="@drawable/shape_spinner"
+                    android:gravity="right" />
+
+                <TextView
+                    android:id="@+id/lblLatitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text=" اگر در شهر "
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layAddressd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:id="@+id/lbl2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_textview_timemanag"
+                    android:text="81540"
+                    android:textColor="#002866"
+                    android:textSize="20sp"
+                    android:textStyle="bold"    android:paddingLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/lblAdd44ress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text=" با جمعیتی حدودا"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layLatituddes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4" >
+
+                <TextView
+                    android:id="@+id/lblLatitudse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:inputType="textMultiLine"
+                    android:singleLine="false"
+                    android:text="@string/textTimeManagment"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layiran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/lbl3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_textview_timemanag"
+                    android:gravity="left"
+                    android:text="4892430600"
+                    android:textColor="#002866"
+                    android:textSize="20sp"
+                    android:textStyle="bold"    android:paddingLeft="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layTitle3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4" >
+
+                <View
+                    android:id="@+id/lblTidtle"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/holo_orange_dark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layLatitudsdes"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lbls"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="این میزان برابر است با:"
+                    android:textAlignment="center"
+                    android:textColor="#BC313B"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:minHeight="25px"
+                android:minWidth="25px" >
+
+                <TableRow android:id="@+id/tableRow2" >
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout3"
+                        android:layout_height="50dp"
+                        android:layout_column="0"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/lblLatit4udds1265dse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="10dp"
+                            android:text="عدد بطری دو لیتری آب"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/arrow_next" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout4"
+                        android:layout_height="50dp"
+                        android:layout_column="2"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/lbl4"
+                            android:layout_width="180dp"
+                            android:layout_height="match_parent"
+                            android:background="#002866"
+                            android:gravity="center|center_vertical"
+                            android:text="1223107650"
+                            android:textColor="#F2F578"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/layLine1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4" >
+
+                <View
+                    android:id="@+id/lblLine1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:minHeight="25px"
+                android:minWidth="25px" >
+
+                <TableRow android:id="@+id/tableRow2" >
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout3"
+                        android:layout_height="50dp"
+                        android:layout_column="0"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/lblLatit4udds1265dse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="10dp"
+                            android:text="تانکرهای صد لیتری آب"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/arrow_next" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout4"
+                        android:layout_height="50dp"
+                        android:layout_column="2"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/lbl5"
+                            android:layout_width="180dp"
+                            android:layout_height="match_parent"
+                            android:background="#002866"
+                            android:gravity="center|center_vertical"
+                            android:text="1223107650"
+                            android:textColor="#F2F578"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/layLine2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4" >
+
+                <View
+                    android:id="@+id/lblLine2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:minHeight="25px"
+                android:minWidth="25px" >
+
+                <TableRow android:id="@+id/tableRow2" >
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout3"
+                        android:layout_height="50dp"
+                        android:layout_column="0"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/lblLatit4udds1265dse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="10dp"
+                            android:text="بشکه دویست لیتری آب"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/arrow_next" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout4"
+                        android:layout_height="50dp"
+                        android:layout_column="2"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/lbl6"
+                            android:layout_width="180dp"
+                            android:layout_height="match_parent"
+                            android:background="#002866"
+                            android:gravity="center|center_vertical"
+                            android:text="1223107650"
+                            android:textColor="#F2F578"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/layLine3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4" >
+
+                <View
+                    android:id="@+id/lblLine3"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:minHeight="25px"
+                android:minWidth="25px" >
+
+                <TableRow android:id="@+id/tableRow2" >
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout3"
+                        android:layout_height="50dp"
+                        android:layout_column="0"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/lblLatitudds1265dse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="10dp"
+                            android:text="نفر مصرف روزانه شان"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/arrow_next" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout4"
+                        android:layout_height="50dp"
+                        android:layout_column="2"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/lbl7"
+                            android:layout_width="180dp"
+                            android:layout_height="match_parent"
+                            android:background="#002866"
+                            android:gravity="center|center_vertical"
+                            android:text="1223107650"
+                            android:textColor="#F2F578"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

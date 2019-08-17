@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/headerbar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/bar_top" >
+
+    <Button
+        android:id="@+id/btn_menu_About"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dip"
+        android:background="@drawable/btn_header_settings"
+        android:text="پشتیبانی"
+        android:textColor="#F9F9F6" />
+
+    <Button
+        android:id="@+id/btn_menu_Setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dip"
+        android:background="@drawable/btn_header_settings"
+        android:text="راهنما"
+        android:textColor="#F9F9F6" />
+
+</RelativeLayout>

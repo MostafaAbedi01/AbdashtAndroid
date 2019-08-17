@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/headerbar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bar_top_timemanagment" >
+
+    <TextView
+        android:id="@+id/btnLevel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dip"
+        android:text="جمع کل"
+        android:textColor="#205298"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/photolevel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_toLeftOf="@id/btnLevel1"
+        android:paddingTop="15dp"
+        android:src="@drawable/arrow_next" />
+
+    <Button
+        android:id="@+id/btnResultVirtualWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/photolevel1"
+        android:text="0"
+        android:textColor="#E40B0A"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/btnResultVirtualWaterLiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/btnResultVirtualWater"
+        android:gravity="right"
+        android:text="لیتر در روز"
+        android:textColor="#E40B0A"
+        android:textSize="15sp" />
+
+</RelativeLayout>

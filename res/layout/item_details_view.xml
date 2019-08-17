@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:padding="8dp" >
+
+    <ImageView
+        android:id="@+id/photoarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="2dp"
+        android:paddingTop="40dp"
+        android:src="@drawable/back_arrowlist" />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_toRightOf="@id/photoarrow"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:id="@+id/txt_itemName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:textColor="#0F57A3"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/itemDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_itemName"
+        android:layout_toRightOf="@id/photo"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:textColor="#576C5B" />
+
+</RelativeLayout>

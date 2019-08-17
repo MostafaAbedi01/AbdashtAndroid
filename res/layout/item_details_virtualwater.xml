@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_virtualwater"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right" >
+
+        <TableRow android:id="@+id/tableRow1" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/lblunit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:paddingTop="18dp"
+                    android:text="لیتر در روز"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#ACE40F"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/atomPay_value"
+                    style="@style/App_EditTextStyle"
+                    android:layout_width="80sp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/lblunit"
+                    android:background="@drawable/shape_edittext"
+                    android:gravity="center_vertical"
+                    android:hint="مقدار"
+                    android:inputType="phone"
+                    android:text="0"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:background="#002D68" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/atomPay_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:textColor="#F8FBFE"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right" >
+
+        <TableRow android:id="@+id/tableRow2" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayou345t3"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/lblSubResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="100dp"
+                    android:paddingTop="48dp"
+                    android:text="0 لیتر در روز"
+                    android:textColor="#E40B0A"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/atomPay_removePay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/lblResult"
+                    android:contentDescription="@string/app_name"
+                    android:gravity="center"
+                    android:onClick="removeAtomPayOnClickHandler"
+                    android:src="@drawable/calculator_ic" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:background="#00448D" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutsdfd3"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/imgphoto"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="right"
+                    android:contentDescription="TODO" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout3332"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right" >
+
+        <TextView
+            android:id="@+id/lblitemDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/glass_texturebutton"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="برای تولید هر لیتر شیر ۱۰۰۰ لیتر آب مورد نیاز است"
+            android:textColor="#D94A38"
+            android:textSize="17sp" />
+    </TableLayout>
+
+</LinearLayout>

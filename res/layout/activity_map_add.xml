@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/fram_map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageButton
+            android:id="@+id/btn_SelectPoint"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="55dp"
+            android:contentDescription=" "
+            android:src="@drawable/btn_check_buttonless_on" />
+
+        <RadioGroup
+            android:id="@+id/rg_views"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="ساده"
+                android:textColor="#590000" />
+
+            <RadioButton
+                android:id="@+id/rb_satellite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ماهواره"
+                android:textColor="#590000" />
+
+            <RadioButton
+                android:id="@+id/rb_terrain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ارتفاع"
+                android:textColor="#590000" />
+
+            <RadioButton
+                android:id="@+id/rb_HYBRID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ترکیب"
+                android:textColor="#590000" />
+        </RadioGroup>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layMain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back_bluelight"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llPlayersName"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/header_bar_code" />
+
+        <LinearLayout
+            android:id="@+id/laymain"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <LinearLayout
+                android:id="@+id/lay1Q1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/lblQ1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="1)چند بار در هفته دوش میگیرید؟"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay2Q1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <SeekBar
+                    android:id="@+id/SeekBarQ1"
+                    style="@style/App_SeekBarStyle"
+                    android:background="@drawable/shape_seekbar"
+                    android:max="10"
+                    android:progress="2" />
+
+                <TextView
+                    android:id="@+id/txtSeekBarQ1"
+                    style="@style/App_TextViewDownSpinner"
+                    android:layout_below="@+id/SeekBarQ1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4" >
+
+                <View
+                    android:id="@+id/lblTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/holo_green_dark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layQ2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/lblQ2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="2)هربار دوش گرفتن چند دقیقه طول میکشد؟"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay2Q2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <SeekBar
+                    android:id="@+id/SeekBarQ2"
+                    style="@style/App_SeekBarStyle"
+                    android:background="@drawable/shape_seekbar"
+                    android:max="60"
+                    android:progress="10" />
+
+                <TextView
+                    android:id="@+id/txtSeekBar2"
+                    style="@style/App_TextViewDownSpinner"
+                    android:layout_below="@+id/SeekBarQ2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layTitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4" >
+
+                <View
+                    android:id="@+id/lblTitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/holo_green_dark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/laybtns"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/btnResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:background="@drawable/btn_header_settings"
+                    android:gravity="center"
+                    android:src="@+drawable/btn_result" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

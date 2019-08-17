@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layMain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <LinearLayout
+        android:id="@+id/llPlayersName"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/header_bar_timemanagment" />
+
+        <TextView
+            android:id="@+id/txtEquipmentTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/blue_squarebutton"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="تست"
+            android:textColor="#350013"
+            android:textSize="22sp" >
+        </TextView>
+
+        <ir.noghteh.JustifiedTextView
+            xmlns:noghteh="http://noghteh.ir"
+            android:id="@+id/txtEquipment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="2sp"
+            android:padding="25dp"
+            noghteh:textColor="#002D68"
+            noghteh:textSize="17sp" >
+        </ir.noghteh.JustifiedTextView>
+
+        <ImageView
+            android:id="@+id/imageEquipment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10sp"
+            android:contentDescription=""
+            android:scaleType="fitCenter"
+            android:src="@drawable/equipment1_1" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name"> مدیریت مصرف آب</string>
+    <string name="action_settings">تنظیمات</string>
+
+    <!-- General Screen -->
+
+    <string name="menu_btnSetting">تنظیمات</string>
+    <string name="menu_btnBack">برگشت</string>
+    <string name="menu_btnMenu">منو</string>
+    <string name="menu_contentdescription">توضیحات</string>
+
+    <!-- Menu Screen -->
+    <string name="menu_item2">محاسبه\nمصرف آب  </string>
+    <string name="menu_item4">مدیریت\nزمان مصرف</string>
+    <string name="menu_item1">محاسبه\n آب مجازی</string>
+    <string name="menu_item3">تجهیزات\n کاهنده مصرف</string>
+    <string name="menu_item6">ارسال \nگزارشات مردمی</string>
+    <string name="menu_item5">نمایش \nگزارشات مردمی</string>
+
+    <!-- Progress Dialog -->
+    <string name="progress_text">در حال بارگزاری مطالب ...</string>
+    <string name="name">name</string>
+    <string name="idName">idName</string>
+    <string name="textTimeManagment">" نفر، هر فرد تنها به این میزان استفاده از دوش حمام را کاهش دهد، میزان صرف جویی آب براساس لیتر برابر خواهد بود با : "</string>
+    <string name="AboutMe">اپلیکیشن جامع مديريت مصرف آب به كوشش مديريت محترم  شركت آريا پژوان نوين، جناب آقاي دكتر حسين آجري و مدیریت گروه برنامه نويسي ايران سافتجو مهندس مصطفی عابدی و مساعدت جناب آقای دکتر تشیعی، معاونت محترم نظارت بر بهره برداری شرکت مهندسی آب و فاضلاب کشور و همچنین با همكاري دفتر مديريت مصرف آب و كاهش آب بدون درآمد شركت مهندسي آب و فاضلاب كشور و شركت آب و فاضلاب استان اصفهان طراحي و تهيه شده است.</string>
+    <string name="AddrssAboutMe">\nدفتر مرکزی: تهران - فلکه دوم صادقیه - بلوار فردوس شرقی - بعد از خیابان ولیعصر - پلاک ۷۲ - طبقه اول - واحد ۴\nتلفن دفتر：۴۴۰۰۱۴۴۷-۰۲۱</string>
+    <string name="todo">TODO</string>
+
+</resources>
